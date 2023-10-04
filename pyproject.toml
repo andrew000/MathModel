@@ -1,0 +1,49 @@
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+src = ["src"]
+select = ["ALL"]
+ignore = [
+    "A003",
+    "ANN002", "ANN003", "ANN101", "ANN102", "ANN401",
+    "CPY001",
+    "D100", "D101", "D102", "D103", "D105", "D106", "D107", "D205",
+    "DTZ003",
+    "E203",
+    "ERA001",
+    "F841",
+    "FA100", "FA102",
+    "FBT001", "FBT002",
+    "PLR0913",
+    "PLW0120",
+    "RUF",
+    "S311"
+]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    ".venv",
+]
+
+
+[tool.ruff.isort]
+known-third-party = []

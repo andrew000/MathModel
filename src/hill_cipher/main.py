@@ -12,8 +12,9 @@ def main() -> None:
         alphabet=UK_ALPHABET,
         similar_letters={"Ґ": "Г", "Ї": "І"},
     )
-    encrypted_message = hill_cipher_builder.encrypt("НАОЧНИЙДОКАЗ")
+    encrypted_message = hill_cipher_builder.encrypt("ДЕРЖАВНИЙ")
     print(encrypted_message)  # noqa: T201
+    # RESULT: "ШЧСЕГУЮШИ"
 
     decrypted_message = hill_cipher_builder.decrypt(encrypted_message)
     print(decrypted_message)  # noqa: T201
